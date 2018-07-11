@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./bootstrap.min.css"   >
+        <link rel="stylesheet" href="ch.css">
+        <title>Merry Christmas</title>
+        <script>
+            var min = 1;
+            var max = 150;
+            var a;
+            
+            function rand(show)
+            {
+                a = Math.floor(Math.random() * (max - min) + min);
+                show.value = a;
+            }
+        </script>
+    </head>
+    <body style="background-color:#b40000;">
+        <div class="container" id="main">
+            <div class="row">
+                <div class="col-md-6"><h1 class="text-center" >Merry</h1></div>
+                <div class="col-md-6"><h1 class="text-center" >Christmas</h1></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4"><input type="text" class="form-control input-lg red" disabled id="num1"></div>
+                <div class="col-md-4"><input type="text" class="form-control input-lg red" disabled id="num2"></div>
+                <div class="col-md-4"><input type="text" class="form-control input-lg red" disabled id="num3"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4"><br><button type="button" class="chi btn btn-block" style="background-color:#0b6200;color:white;font-size:30px;" onclick="rand(num1);">Number - 1</button></div>
+                <div class="col-md-4" onclick="rand(num2);"><br><button type="button" class="chi btn btn-block" style="background-color:#0b6200;color:white;font-size:30px;">Number - 2</button></div>
+                <div class="col-md-4"><br><button type="button" class="chi btn btn-block" style="background-color:#0b6200;color:white;font-size:30px;" onclick="rand(num3); ">Number - 3</button></div>
+            </div>
+        </div>
+    
+            <script src="snowstorm.js"></script>
+        
+    </body>
+</html>
